@@ -1,5 +1,8 @@
 # Timeseries databases comparison
 
+## InfluxDb
+Sharding feature is only for enterprise version.
+
 ## KairosDB
 KairosDB is a fast distributed scalable time-series database. It was initially a rewrite of the original OpenTSDB project, but evolved to a different system for which data management, data processing, and visualization are fully separated. 
 

@@ -39,5 +39,4 @@ Kudu is a much lower level datastore than timeseries databases. Its more like a 
 Kudu stores data in tablets and offers two ways of partitioning data: Range Partitions, Hash based Partitioning or both. See [here](https://kudu.apache.org/docs/schema_design.html#partitioning) and [here](https://www.linkedin.com/pulse/storing-data-range-hash-partitions-kudu-arkanil-dutta) for more details. This means that to storage timeseries it is required a partition by time range and series hash (i.e. all tags attribute of a timeseries). 
 
 Cons.
-- Kudu is a is a storage engine not a SQL engine. This means that it is not optimized for timeseries analytic queries as traditional timeseries databases. However, impala or spark could be used for querying and analyzing data stored in kudu.
-- Grafana does not provide any Kudu plugins.
+- Kudu is a is a storage engine not a SQL engine. This means that it is not optimized for timeseries analytic queries as traditional timeseries databases.  Non-partitioned queries do not scale with respect to the size of cluster, thus they are discouraged. However, impala or spark could be used for querying and analyzing data stored in Kudu (take care of cross-partition operations, hotspots problems and data shuffling). 

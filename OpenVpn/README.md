@@ -92,6 +92,7 @@ Next we need to run and enable OpenVPN on startup.
 To generate a certificate for our client, e.g. Fabiana, run the following command:
 
     cd /etc/openvpn/easy-rsa
+    source ./vars
     ./build-key fabiana
     
 The files *fabiana.crt*, *fabiana.key* , "ca.crt" must be downloaded to the client.

@@ -40,7 +40,7 @@ Create a mount point and then mount the volume somewhere you can use it. However
 
 Now, we want to associate the dir */kafka* with the new physical volume. To do this, we have to edit the file */etc/fstab* with this instruction:
 
-> dev/mapper/kafka01-kafka /kafka xfs noatime 0 0
+> /dev/mapper/kafka01-kafka /kafka xfs noatime 0 0
 
 that is, we are associating the dir */kafka* with the new logical volume *dev/mapper/kafka01-kafka*, rather the old volume (e.g. /dev/vdc1)
 

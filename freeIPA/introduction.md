@@ -75,7 +75,7 @@ In the following there is an example of a LDAP entry (in LDIF format):
 ```
 
 
-![alt text]("https://github.com/fabiana001/documentations/blob/master/freeIPA/imgs/tree.png")
+![alt text](https://github.com/fabiana001/documentations/blob/master/freeIPA/imgs/tree.png "LDAP directory Tree")
 *Example of an LDAP directory tree *
 
 #### Authentication

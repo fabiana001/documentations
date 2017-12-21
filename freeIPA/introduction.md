@@ -143,6 +143,10 @@ For this purpose, SSSD:
 Users on the local system are then able to authenticate using the user accounts stored in the external back-end system.
 **NOTE** that SSSD **does not create user accounts on the local system**. Instead, it uses the identities from the external data store and lets the users access the local system.
 
+Benefits:
+1. **Reduced load on identity and authentication servers**. SSSD has an own identities and credentials cache ( these cache files are stored in the /var/lib/sss/db/ directory). Therefore, SSSD contacts the servers only if the information is not available in the cache.
+2. **Offline authentication**. If and when the connection to the central server is lost an application can continue to operate if it has a cache; SSSD provides such cache.
+3. **A single user account: improved consistency of the authentication process**.  Everything is managed in one place, including policies. With SSSD, it is not necessary to maintain both a central account and a local user account for offline authentication.
 
 #### Using FreeIPA as Identity Provider for SSSD
 SSSD provides access to identity and authentication services and is primarily aimed at the operating system level. SSSD can be configured with FreeIPA in the way to have fine-grained control over a user's access to the system. In particular, SSSD can use FreeIPA for all of its backend functions: : authentication, identity lookups, access, and password changes. 
@@ -151,10 +155,7 @@ FreeIPA Client integrates with many Linux native services so that administrator 
 
 For more details see [here](https://www.freeipa.org/images/c/cc/FreeIPA33-sssd-access-control.pdf) and [here](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/windows_integration_guide/sssd-ad)
 
-Benefits:
-1. **Reduced load on identity and authentication servers**. SSSD has an own identities and credentials cache ( these cache files are stored in the /var/lib/sss/db/ directory). Therefore, SSSD contacts the servers only if the information is not available in the cache.
-2. **Offline authentication**. If and when the connection to the central server is lost an application can continue to operate if it has a cache; SSSD provides such cache.
-3. **A single user account: improved consistency of the authentication process**.  Everything is managed in one place, including policies. With SSSD, it is not necessary to maintain both a central account and a local user account for offline authentication.
+
 
 ## References
 [1] [CONFIGURING KERBEROS (WITH LDAP OR NIS) USING AUTHCONFIG, Red Hat documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system-level_authentication_guide/authconfig-kerberos)

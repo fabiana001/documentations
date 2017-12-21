@@ -75,8 +75,8 @@ In the following there is an example of a LDAP entry (in LDIF format):
 ```
 
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-*Example of LDAP directory tree *
+![alt text](https://github.com/fabiana001/documentations/blob/master/freeIPA/imgs/tree.png")
+*Example of an LDAP directory tree *
 
 #### Authentication
 To start an LDAP session, the LDAP client first must authenticate itself to the service. That is, it must tell the LDAP server who is going to be accessing the data so that the server can decide what the client is allowed to see and do. If the client authenticates successfully to the LDAP server, then when the server subsequently receives a request from the client, it will check whether the client is allowed to perform the request. This process is called access control.

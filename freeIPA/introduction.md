@@ -1,5 +1,6 @@
 # FreeIPA
-FreeIPA is an Identity management system sponsored by Red Hat. It aims to provide an easily managed Identity, Policy, and Audit (IPA) [[2]](https://www.freeipa.org/page/IPAv3_Architecture) [[3]](https://www.freeipa.org/page/IPA_and_AD).  The IPA project was started to provide a solution for using Window AD on UNIX/Linux environment, representing thus an AD surrogate for Windows clients in the UNIX/Linux world.
+FreeIPA is an Identity management system sponsored by Red Hat. In particular, The "IPA" part of FreeIPA stands for Identity (identifying and authenticating users and machines), Policy (settings for access control of applications and machines), and Audit (methods for collecting and auditing security events, logs, and user activities). [[2]](https://www.freeipa.org/page/IPAv3_Architecture) [[3]](https://www.freeipa.org/page/IPA_and_AD).  The IPA project was started to provide a solution for using Window AD on UNIX/Linux environment, representing thus an AD surrogate for Windows clients in the UNIX/Linux world.
+
 
 ## FreeIpa Components
 

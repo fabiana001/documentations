@@ -89,3 +89,11 @@ It should return something like the following:
     Number of entries returned 1
     ----------------------------
 
+Now, we should also be able to access the web UI at https://idm.staging.daf.teamdigitale.it/ipa/ui/
+
+## References
+
+[1] [How To Set Up Centralized Linux Authentication with FreeIPA on CentOS 7][https://www.digitalocean.com/community/tutorials/how-to-set-up-centralized-linux-authentication-with-freeipa-on-centos-7#step-4-%E2%80%94-installing-the-freeipa-server]
+
+[2] [How to manually start IdM/IPA 4.0-4.4 server services for troubleshooting purposes in RHEL 7.0-7.3](https://access.redhat.com/solutions/1605213)
+

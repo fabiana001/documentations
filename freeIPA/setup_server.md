@@ -24,9 +24,9 @@ You need to verify that the DNS names resolve properly. You can use the dig comm
 Running :
 > dig +short idm.staging.daf.teamdigitale.it A
 
-you should see the your_server_ipv4. The following command do the vice versa:
+you should see the ip address (e.g. 192.168.20.13). The following command do the vice versa:
 
-> dig +short -x your_server_ipv4
+> dig +short -x 192.168.20.13
 
 Finally edit */etc/hosts* for changing the host file to point the server's hostname to its external IP address. The file should look as following:
 
@@ -69,6 +69,7 @@ It is highly recommended to watch the messages that are logged to the journal wh
 First, verify that the Kerberos realm installed correctly by attempting to initialize a Kerberos token for the admin user.  Then, verify that the IPA server is functioning properly.
 
 > kinit admin
+
 > ipa user-find admin
 
 It should return something like the following:

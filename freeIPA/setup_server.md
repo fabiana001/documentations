@@ -47,6 +47,23 @@ Install and enable rngd:
 
 The output should include active (running) in green.
 
+### Enable NTP (Network Time Protocol)
+Kerberos is a time sensitive protocol because its authentication is based partly on the timestamps of the tickets. We need to enable NTP (Network Time Protocol), otherwise clients attempting to authenticate from a machine with an inaccurate clock will be failed by the KDC in authentication attempts due to the time difference. So on **all machines** (both clients and server) we do the following:
+
+> $ yum install ntp
+> $ service ntpd start
+> $ chkconfig ntpd on
+
+Make sure that on all machines the date/time is set correctly:
+
+> date
+
+If it's not you might need to synchronize the hardware clock (see [here](http://docs.slackware.com/howtos:hardware:syncing_hardware_clock_and_system_local_time) for more details) and/or change your timezone:
+
+> timedatectl set-timezone Europe/Rome
+
+> date
+
 ### Installing the FreeIPA Server
 
 Install freeipa server:

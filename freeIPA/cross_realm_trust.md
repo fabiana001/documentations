@@ -18,7 +18,7 @@ Run the following commands in the kadmin.local or kadmin shell on both KDCs:
  addprinc krbtgt/MIT_REALM@FREEIPA_REALM
  password: abc1234
 
-Finally **Add Domain to MIT KDC Configuration**:
+Finally **Add Domain to MIT KDC Configuration** (in */etc/krb5.conf*):
 
 
 ```bash

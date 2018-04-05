@@ -44,3 +44,5 @@ Fore more details about Cross-Realm Trust setting, see [here](https://www.cloude
 [1] [Cloudera Cross-Realm Trust tutorial](https://www.cloudera.com/documentation/enterprise/5-12-x/topics/cm_sg_kdc_def_domain_s2.html)
 
 [2] [Kerberos Cross-Realm Authentication slides](http://www.dia.uniroma3.it/~afscon09/docs/angius.pdf)
+
+[3] [Kerberos-Cloudera setup](https://blog.godatadriven.com/kerberos-cloudera-setup.html)

@@ -32,7 +32,6 @@ Add freeipa server into /etc/hosts:
 > 192.168.0.29    idm.daf.gov.it                  idm
 
 Run the command *ipa-client-install* with the following configurations:
-- IPA server name: daf.gov.it
 - IPA server name: idm.daf.gov.it
 - DNS discovery? [no]: yes
 - User authorized to enroll computers: admin
